@@ -1,7 +1,7 @@
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import nehaProfile from '@/assets/neha-profile.jpg';
+import nehaPhoto from '@/assets/neha-photo.jpg';
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex justify-center sm:justify-start">
               <Link to="/portfolio">
                 <Button 
                   size="lg" 
@@ -30,16 +30,6 @@ const Hero = () => {
                 >
                   View Portfolio
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300"
-                >
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
                 </Button>
               </Link>
             </div>
@@ -79,7 +69,7 @@ const Hero = () => {
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full gradient-card p-1">
                 <div className="w-full h-full rounded-full bg-white overflow-hidden">
                   <img
-                    src={nehaProfile}
+                    src={nehaPhoto}
                     alt="Neha - Web Developer & IT Support Specialist"
                     className="w-full h-full object-cover"
                   />

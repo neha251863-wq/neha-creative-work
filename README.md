@@ -1,15 +1,15 @@
-# Welcome to my project
+# Welcome to the loveable project
 
 ## Project info
 
-**URL**: https://dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b
+**URL**: https://loveable.dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
 
-Simply visit the (https:/dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b) and start prompting.
+Simply visit the (https:/loveable.dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b) and start prompting.
 
 **Use your preferred IDE**
 

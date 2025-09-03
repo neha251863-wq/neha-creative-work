@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+# Welcome to my project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b
+**URL**: https://dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b
 
 ## How can I edit this code?
 
@@ -10,13 +10,11 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+Simply visit the (https:/dev/projects/ef409297-2b05-41f1-8a2a-35584dc81d9b) and start prompting.
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 

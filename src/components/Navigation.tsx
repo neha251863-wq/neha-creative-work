@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X, Code2, Home, User, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -17,11 +17,11 @@ const Navigation = () => {
   }, []);
 
   const navigationItems = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Services', path: '/services' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Home', path: '/', icon: Home, enhanced: true },
+    { name: 'About', path: '/about', icon: User, enhanced: true },
+    { name: 'Portfolio', path: '/portfolio', enhanced: false },
+    { name: 'Services', path: '/services', enhanced: false },
+    { name: 'Contact', path: '/contact', icon: Mail, enhanced: true },
   ];
 
   return (
@@ -51,12 +51,15 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary ${
                   location.pathname === item.path
                     ? 'text-primary'
                     : 'text-foreground/70'
-                }`}
+                } ${item.enhanced ? 'font-semibold' : ''}`}
               >
+                {item.enhanced && item.icon && (
+                  <item.icon className="h-4 w-4" />
+                )}
                 {item.name}
               </Link>
             ))}
@@ -85,13 +88,16 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:bg-accent ${
+                className={`flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:bg-accent ${
                   location.pathname === item.path
                     ? 'text-primary bg-accent'
                     : 'text-foreground/70'
-                }`}
+                } ${item.enhanced ? 'font-semibold' : ''}`}
                 onClick={() => setIsOpen(false)}
               >
+                {item.enhanced && item.icon && (
+                  <item.icon className="h-4 w-4" />
+                )}
                 {item.name}
               </Link>
             ))}
